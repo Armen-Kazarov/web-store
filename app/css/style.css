@@ -96,7 +96,6 @@ a{
 }
 
 a:hover {
-    color: inherit;
     text-decoration: none;
 }
 
@@ -124,11 +123,24 @@ textarea {
             justify-content: space-between;
 }
 
+.justify-sa {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+}
+
 .align-center {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+}
+
+.align-end {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
 }
 
 .white-bg {
@@ -141,6 +153,10 @@ textarea {
 
 .orange-text {
     color: #ff5912;
+}
+
+.dark-blue-text {
+    color: #495662;
 }
 
 .red-bg {
@@ -166,6 +182,14 @@ textarea {
 .orange-bg {
     background-color: #ff5912;
 }
+
+.fs-sixteen {
+    font-size: 16px;
+}
+
+.words-interval {
+    padding-right: 8px;
+}
 /* DEFAULT-CLASSES END*/
 
 /*DEFAULT COMPONENTS START*/
@@ -181,7 +205,14 @@ textarea {
 }
 
 .header .top-header .contact-list li {
-    display: inline-block;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.header .top-header .contact-list li span {
+    padding-top: 1px;
 }
 
 .header .top-header .contact-list-mail:hover {
@@ -198,6 +229,10 @@ textarea {
 
 .header .top-header .social-list li + li {
     margin-left: 18px;
+}
+
+.header .top-header .social-list li:hover a {
+    color: #ff5912;
 }
 
 .header .bottom-header {
@@ -248,6 +283,30 @@ textarea {
 }
 /*HEADER END*/
 
+.icon-search-ic:hover {
+    background-position: -81px 0px;
+}
+
+.icon-user-ic:hover {
+    background-position: 0 -59px;
+}
+
+.icon-cart-ic:hover {
+    background-position: -20px -59px;
+}
+
+.icon-share-ic:hover {
+    background-position: -44px -59px;
+}
+
+.icon-add-to-cart-ic:hover {
+    background-position: 0 -38px;
+}
+
+.icon-like-ic:hover {
+    background-position: -38px -80px;
+}
+
 .title {
     font-family: 'Harmonia_black';
     text-transform: uppercase;
@@ -257,6 +316,11 @@ textarea {
 
 .title.big {
     font-size: 25px;
+}
+
+.subtitle {
+    margin-bottom: 80px;
+    text-align: center;
 }
 
 .default-section {
@@ -330,6 +394,10 @@ textarea {
     z-index: 99;
 }
 
+.product-item .more-info-on-hover .sizes  {
+    margin-bottom: 28px;
+}
+
 .product-item .colors {
     border-bottom: 1px solid #f2f4f7;
     padding-bottom: 30px;
@@ -391,6 +459,32 @@ textarea {
 .sale-carousel .carousel-indicators li.active {
     background-color: #ff5912;
     height: 36px;
+}
+
+.sale-carousel .item-carousel-description .text-semibd {
+    font-family: 'Harmonia_semibold';
+    color: #3c4751;
+    font-size: 18px;
+}
+
+.sale-carousel .item-carousel-description p {
+    line-height: 1.8em;
+}
+
+.sale-carousel .item-carousel-description p + p {
+    margin-bottom: 52px;
+}
+
+.sale-carousel .item-carousel-description .item-carousel-description-price .icon {
+    margin: 0 2px -1px 24px;
+}
+
+.sale-carousel .item-carousel-description .item-carousel-description-price .carousel-price {
+    color: #34404b;
+}
+
+.sale-carousel .item-carousel-description .item-carousel-description-price a:hover {
+    color: rgba(255, 89, 18, .85);
 }
 
 .kit {
