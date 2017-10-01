@@ -338,6 +338,7 @@ button {
     padding: 30px 10px;
     position: relative;
     height: 372px;
+    margin-bottom: 28px;
 }
 
 .product-item:hover {
@@ -400,7 +401,8 @@ button {
 
 .product-item .colors {
     border-bottom: 1px solid #f2f4f7;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .product-item li {
@@ -456,7 +458,9 @@ button {
     color: #ff5912;
 }
 
-
+.best-item-info .best-item-rating :nth-child(4) {
+    color: #e9ebf3;
+}
 
 .add-to-cart-on-hover .icon {
     margin-right: 8px;
@@ -497,8 +501,43 @@ button {
     color: rgba(255, 89, 18, .85);
 }
 
+.subscribe-description .news-letter {
+    font-family: "Harmonia_bold";
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.subscribe-description .join-us {
+    font-family: "Harmonia_italic";
+    font-size: 14px;
+    margin-left: 14px;
+}
+
 .subscribe-form {
     padding: 35px 45px;
+}
+
+.btn-default {
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-family: 'Harmonia_semibold';
+    font-size: 14px;
+    padding: 17px 28px;
+    margin-left: 160px;
+}
+
+.btn-default:hover {
+    background-color: rgba(255, 89, 18, .85);
+    color: #fff;
+}
+
+input[type="text"] {
+    margin-left: 8px;
+    padding-top: 5px;
+    font-family: "Harmonia_italic";
+    font-size: 14px;
+    color: #7c8791;
 }
 
 .aside-section {
@@ -509,9 +548,38 @@ button {
     margin-top: 30px;
 }
 
+.aside-section .aside-section-title {
+    font-family: "Harmonia_black";
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.aside-section .aside-section-categories-list {
+    font-family: "Harmonia_semibold";
+    line-height: 3.33em;
+}
+
+.aside-section .aside-section-categories-list li a:hover {
+    color: #ff5912;
+}
+
+.aside-section .aside-section-title.title-price-filter {
+    margin-bottom: 64px;
+}
+
+.aside-section .checkbox-group {
+    font-family: "Harmonia_semibold";
+
+}
+
+.aside-section form .checkbox-group + .checkbox-group {
+    margin-top: 30px;
+}
+
 input[type="checkbox"] {
     display: none;
 }
+
 input[type="checkbox"] + label {
     font-size: 16px;
     cursor: pointer;
@@ -533,6 +601,13 @@ input[type="checkbox"]:checked + label {
 }
 input[type="checkbox"]:checked + label::before {
     border-color: #ff5912;
+}
+
+input[type="number"] {
+    background-color: #edf0f2;
+    margin-left: 10px;
+    width: 45px;
+    height: 25px;
 }
 
 .ui-widget.ui-widget-content {
@@ -566,7 +641,63 @@ input[type="checkbox"]:checked + label::before {
 
 .add-range-value {
     margin-top: 30px;
+    font-family: "Harmonia_semibold";
+    font-size: 14px;
 }
+
+.range-input-group.left-indent {
+    margin-left: 18px;
+}
+
+/*FOOTER START*/
+footer {
+    margin-top: 60px;
+    padding: 90px 0 80px 0;
+}
+
+.footer-logo {
+    flex-direction: column;
+}
+
+.footer-logo .your-copyright {
+    font-size: 14px;
+    color: #28313b;
+    margin-top: 18px;
+}
+
+.footer-nav ul {
+    list-style: unset;
+    font-size: 14px;
+    color: #28313b;
+}
+
+.footer-nav ul li:hover {
+    color: #ff5912;
+}
+
+.footer-nav ul li:hover a {
+    color: #ff5912;
+}
+
+.footer-nav ul + ul {
+    margin-left: 120px;
+}
+
+.footer-nav ul li + li {
+    margin-top: 20px;
+}
+
+.payment-methods span {
+    display: block;
+    margin-bottom: 18px;
+    font-family: "Harmonia_semibold";
+}
+
+.payment-methods .payment-methods-icon li+li {
+    margin-left: 8px;
+}
+/*FOOTER END*/
+
 /*DEFAULT COMPONENTS END*/
 
 .sale-carousel {
@@ -753,3 +884,6 @@ input[type="checkbox"]:checked + label::before {
     padding-bottom: 60px;
 }
 
+.load-more-category {
+    margin: 0;
+}
