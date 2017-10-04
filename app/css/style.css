@@ -963,3 +963,30 @@ footer {
 .load-more-category {
     margin: 0;
 }
+
+/* Product slider start */
+.product-slider {
+    width: 330px;
+}
+/* Product slider start */
+
+/* Product description start*/
+.size-radio input[type="radio"] {
+    display: none;
+}
+
+.size-radio label {
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.size-radio input[type="radio"]:checked + label {
+    color: #ff5912;
+    font-size: 18px;
+}
+/* Product description end*/
