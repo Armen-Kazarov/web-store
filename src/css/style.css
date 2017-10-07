@@ -115,6 +115,11 @@ input, button, select {
     outline: none;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
 button {
     cursor: pointer;
 }
@@ -603,7 +608,7 @@ input[type="checkbox"]:checked + label::before {
     border-color: #ff5912;
 }
 
-input[type="number"] {
+.range .add-range-value input[type="number"] {
     background-color: #edf0f2;
     margin-left: 10px;
     width: 45px;
@@ -909,5 +914,20 @@ footer {
 .size-radio input[type="radio"]:checked + label {
     color: #ff5912;
     font-size: 18px;
+}
+
+.size-radio + .size-radio:before {
+    content: "-";
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.order-form {
+    font-family: "Harmonia_semibold";
+    font-size: 18px;
+}
+
+.input-quantity {
+    margin-right: -76px;
 }
 /* Product description end*/
