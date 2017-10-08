@@ -197,6 +197,12 @@ button {
 .words-interval {
     padding-right: 8px;
 }
+
+.text-semibd {
+    font-family: 'Harmonia_semibold';
+    color: #3c4751;
+    font-size: 18px;
+}
 /* DEFAULT-CLASSES END*/
 
 /*DEFAULT COMPONENTS START*/
@@ -745,10 +751,8 @@ footer {
     height: 36px;
 }
 
-.sale-carousel .item-carousel-description .text-semibd {
-    font-family: 'Harmonia_semibold';
-    color: #3c4751;
-    font-size: 18px;
+.sale-carousel .item-carousel-description .title {
+    text-indent: -3px;
 }
 
 .sale-carousel .item-carousel-description p {
@@ -893,6 +897,10 @@ footer {
     margin: 0;
 }
 
+.product-wrap {
+    padding: 100px 0;
+}
+
 /* Product slider start */
 .product-slider {
     width: 330px;
@@ -900,6 +908,28 @@ footer {
 /* Product slider start */
 
 /* Product description start*/
+.product-description .product-description-text {
+    padding-bottom: 38px;
+}
+
+.product-description .title {
+    text-indent: -3px;
+}
+
+.product-description p.text-semibd {
+    margin-bottom: 30px;
+}
+
+.product-description p.fs-midle {
+    line-height: 2em;
+}
+
+.radio-list-btn {
+    margin-left: 20px;
+    border-right: 1px solid #f5f5f6;
+    padding-right: 82px;
+}
+
 .size-radio input[type="radio"] {
     display: none;
 }
@@ -925,9 +955,36 @@ footer {
 .order-form {
     font-family: "Harmonia_semibold";
     font-size: 18px;
+    padding: 40px 0;
+    border-top: 1px solid #f5f5f6;
+    border-bottom: 1px solid #f5f5f6;
 }
 
 .input-quantity {
-    margin-right: -76px;
+    margin-right: -92px;
+}
+
+.order-now {
+    padding-top: 35px;
+}
+
+.order-now-price {
+    font-family: "Harmonia_black";
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
+.order ul {
+    padding-bottom: 8px;
+}
+
+.order ul li + li {
+    margin-left: 28px;
+}
+
+.order button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
 }
 /* Product description end*/
