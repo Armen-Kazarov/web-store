@@ -316,6 +316,20 @@ button {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
 }
+
+@media (max-width: 991px) {
+    .header .bottom-header .header-nav {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+
+    .header .bottom-header .user-controls {
+        margin-left: 0;
+    }
+}
 /*HEADER END*/
 
 .icon-search-ic:hover {
@@ -550,6 +564,24 @@ button {
     color: rgba(255, 89, 18, .85);
 }
 
+@media (max-width: 1199px) {
+    .best-sales .best-items {
+        padding: 34px 10px;
+    }
+
+    .best-item-description {
+        margin-left: 18px;
+        padding-left: 22px;
+    }
+
+    .best-item-title {
+        white-space: nowrap;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+    }
+}
+
 .subscribe-description .news-letter {
     font-family: "Harmonia_bold";
     font-size: 18px;
@@ -564,6 +596,22 @@ button {
 
 .subscribe-form {
     padding: 35px 45px;
+}
+
+@media (max-width: 991px) {
+    .subscribe-form {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .subscribe-description {
+        margin-bottom: 30px;
+    }
 }
 
 .btn-default {
@@ -757,6 +805,31 @@ footer {
 .payment-methods .payment-methods-icon li+li {
     margin-left: 8px;
 }
+
+@media (max-width: 1199px) {
+    .footer-nav ul + ul {
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer-logo {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .footer-nav {
+        margin-bottom: 25px;
+    }
+
+    .column {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
 /*FOOTER END*/
 
 /*DEFAULT COMPONENTS END*/
@@ -856,6 +929,12 @@ footer {
 .kit {
     padding: 20px 60px;
     border: 1px solid #eaedef;
+}
+
+@media (max-width: 1199px) {
+    .kit {
+        margin-bottom: 30px;
+    }
 }
 
 .sales-block {
