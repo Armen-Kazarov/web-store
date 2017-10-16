@@ -311,6 +311,13 @@ button {
     }
 }
 
+@media (min-width: 768px) {
+    .slicknav_menu .slicknav_nav a {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 479px) {
     .header .top-header .contact-list li {
         display: block;
@@ -605,6 +612,48 @@ button {
     }
 }
 
+@media (max-width: 599px) {
+    .subscribe-description .news-letter {
+        font-size: 16px;
+    }
+
+    .subscribe-description .join-us {
+        font-size: 12px;
+        margin-left: 12px;
+    }
+}
+
+@media (max-width: 479px) {
+    .subscribe-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subscribe-description .news-letter {
+        text-align: center;
+    }
+
+    .subscribe-description .join-us {
+        margin-left: 0;
+        font-size: 10px;
+    }
+
+    .subscribe-form form {
+        flex-wrap: wrap;
+    }
+
+    .subscribe-form input[type="text"] {
+        width: 87%;
+    }
+
+    .subscribe-form .btn {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
+
 .btn-default {
     border: none;
     border-radius: 0;
@@ -623,6 +672,7 @@ button {
 .btn-radius {
     padding: 10px 20px;
     border-radius: 25px;
+    margin-left: 20px;
 }
 
 input[type="text"] {
@@ -792,7 +842,7 @@ footer {
     font-family: "Harmonia_semibold";
 }
 
-.payment-methods .payment-methods-icon li+li {
+.payment-methods .payment-methods-icon li + li {
     margin-left: 8px;
 }
 
@@ -919,6 +969,36 @@ footer {
     color: rgba(255, 89, 18, .85);
 }
 
+@media (max-width: 767px) {
+    .sale-carousel {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 479px) {
+    .sale-carousel {
+        min-height: 320px;
+    }
+
+    .item-carousel-description .title {
+        font-size: 32px;
+    }
+
+    .sale-carousel .carousel-indicators li.active {
+        height: 22px;
+    }
+
+    .sale-carousel .item-carousel-description p {
+        font-size: 13px;
+    }
+
+    .sale-carousel .item-carousel-description p.default-text {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+
+}
+
 .load-more {
     margin-top: 80px;
 
@@ -949,6 +1029,46 @@ footer {
     .kit {
         margin-bottom: 30px;
         padding: 20px 28px;
+    }
+}
+
+@media (max-width: 599px) {
+    .kit {
+        padding: 20px 22px;
+    }
+
+    .kit .sale-for-three-clothes {
+        padding-right: 0;
+        margin-left: 20px;
+        border-right: none;
+    }
+
+    .kit .title.small {
+        font-size: 20px;
+    }
+
+    .kit .kit-price {
+        font-size: 24px;
+    }
+
+    .kit .kit-price .kit-price-d-b {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 479px) {
+    .kit .flex-container {
+        flex-direction: column;
+    }
+
+    .kit .sale-for-three-clothes {
+        margin-left: 0;
+        margin-top: 16px;
+        text-align: center;
+    }
+
+    .kit .kit-price {
+        margin-top: 14px;
     }
 }
 
@@ -1173,13 +1293,62 @@ footer {
 .order-now-price {
     font-family: "Harmonia_black";
     font-size: 20px;
+    margin-right: auto;
 }
 
 .order ul li + li {
     margin-left: 28px;
 }
 
-.order .btn-radius {
-    margin-left: 20px;
+@media (max-width: 599px) {
+    .product-description .product-description-text {
+        text-align: center;
+    }
+
+    #product-option-form {
+        flex-direction: column;
+    }
+
+    .order-now {
+        flex-wrap: wrap;
+    }
+
+    .order-now-price {
+        font-size: 18px;
+        width: 50%;
+    }
+
+    .order {
+        width: 50%;
+    }
+
+    .btn-radius {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 479px) {
+    .product-wrap .title {
+        font-size: 36px;
+    }
+
+    .product-wrap .product-slider {
+        width: 300px;
+    }
+
+    .product-description .product-description-text p.text-semibd {
+        margin-bottom: 14px;
+        font-size: 16px;
+    }
+
+    .product-description .product-description-text p.default-text {
+        font-size: 14px;
+    }
+
+    .order-form {
+        padding: 10px 0;
+    }
+
 }
 /* Product description end*/
