@@ -1359,6 +1359,18 @@ footer {
 
 .product-wrap {
     padding: 100px 0;
+    overflow:hidden;
+    overflow-y: hidden;
+}
+
+@media (max-width: 479px) {
+    .related-products .title {
+        font-size: 28px;
+    }
+
+    .related-products .subtitle {
+        font-size: 12px;
+    }
 }
 
 /* Product slider start */
@@ -1441,11 +1453,13 @@ footer {
     margin-left: 28px;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 991px) {
     .product-description .product-description-text {
         text-align: center;
     }
+}
 
+@media (max-width: 599px) {
     #product-option-form {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
