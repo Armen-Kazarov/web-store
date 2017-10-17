@@ -1330,10 +1330,12 @@ footer {
     .order-now-price {
         font-size: 18px;
         width: 50%;
+        margin-right: 0;
     }
 
     .order {
         width: 50%;
+        justify-content: flex-end;
     }
 
     .btn-radius {
